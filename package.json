@@ -10,7 +10,7 @@
     "url": "nlhuykhang.github.io"
   },
   "scripts": {
-    "test": "ava"
+    "test": "ava ./test/test.js"
   },
   "files": [
     "index.js"

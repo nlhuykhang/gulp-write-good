@@ -44,7 +44,7 @@ module.exports = function gulpWriteGood(opts) {
 
     try {
       const contents = file.contents.toString();
-      const suggestions = writeGood(contents);
+      const suggestions = writeGood(contents, opts);
       file.suggestions = writeGood.annotate(contents, suggestions, true);
     } catch (err) {
       this.emit('error', new gutil.PluginError('gulp-write-good', err));

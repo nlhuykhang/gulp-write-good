@@ -1,43 +1,38 @@
-# gulp-<%= pluginName %> [![Build Status](https://travis-ci.org/<%= githubUsername %>/gulp-<%= pluginName %>.svg?branch=master)](https://travis-ci.org/<%= githubUsername %>/gulp-<%= pluginName %>)
+# gulp-write-good [![Build Status](https://travis-ci.org/<%= githubUsername %>/gulp-<%= pluginName %>.svg?branch=master)](https://travis-ci.org/<%= githubUsername %>/gulp-<%= pluginName %)
 
-> My <%= superb %> gulp plugin
-
+> Gulp plugin wrapper for [write-good](https://github.com/btford/write-good)
 
 ## Install
 
 ```
-$ npm install --save-dev gulp-<%= pluginName %>
+$ npm install --save-dev gulp-write-good
 ```
-
 
 ## Usage
 
-```js
+```javascript
 const gulp = require('gulp');
-const <%= camelPluginName %> = require('gulp-<%= pluginName %>');
+const gulpWriteGood  = require('gulp-write-good');
 
 gulp.task('default', () => {
-	gulp.src('src/file.ext')
-		.pipe(<%= camelPluginName %>())
-		.pipe(gulp.dest('dist'))
+  gulp.src('**/*.md')
+    .pipe(gulpWriteGood())
+    .pipe(gulpWriteGood.reporter());
 );
 ```
 
-
 ## API
 
-### <%= camelPluginName %>([options])
+### gulpWriteGood([options])
 
 #### options
 
-##### foo
+options object will be passed directly to write-good, all options properties is described [here](https://github.com/btford/write-good#checks).
 
-Type: `boolean`<br>
-Default: `false`
+### gulpWriteGood.reporter()
 
-Lorem ipsum.
-
+This makes and prints a report for all suggestions returned by write-good
 
 ## License
 
-MIT © [<%= name %>](<%= website %>)
+MIT
