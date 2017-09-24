@@ -1,4 +1,4 @@
-# gulp-write-good [![Build Status](https://travis-ci.org/<%= githubUsername %>/gulp-<%= pluginName %>.svg?branch=master)](https://travis-ci.org/<%= githubUsername %>/gulp-<%= pluginName %)
+# gulp-write-good [![Build Status](https://travis-ci.org/nlhuykhang/gulp-write-good.svg?branch=master)](https://travis-ci.org/nlhuykhang/gulp-write-good)
 
 > Gulp plugin wrapper for [write-good](https://github.com/btford/write-good)
 
