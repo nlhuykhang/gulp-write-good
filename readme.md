@@ -27,7 +27,7 @@ gulp.task('default', () => {
 
 #### options
 
-options object will be passed directly to write-good, all options properties is described [here](https://github.com/btford/write-good#checks).
+`options` object is passed directly to `write-good` function, all properties are described [here](https://github.com/btford/write-good#checks).
 
 ### gulpWriteGood.reporter()
 
